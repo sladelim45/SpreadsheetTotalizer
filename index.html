@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>Spreadsheet Totalizer</h1>
+<p>Upload one or multiple spreadsheets to totalize.</p>
+  <form enctype="multipart/form-data">
+    <input type="file" name="fileUpload" id="fileUpload" multiple>
+    <button type="submit">Upload</button>
+  </form>
+<script src="totalizer.js"></script>
+
 </body>
 </html>
