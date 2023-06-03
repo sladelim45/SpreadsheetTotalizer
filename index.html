@@ -3,11 +3,11 @@
 <body>
 <h1>Spreadsheet Totalizer</h1>
 <p>Upload one or multiple spreadsheets to totalize.</p>
-  <form enctype="multipart/form-data">
-    <input type="file" name="fileUpload" id="fileUpload" multiple>
-    <button type="submit">Upload</button>
+  <form enctype="uploadForm">
+    <input type="file" name="fileUpload" id="fileUpload" multiple accept="">
+    <input type="submit" onclick="handleFileUpload(event)"></button>
   </form>
 <script src="totalizer.js"></script>
 
-</body>
+</body> 
 </html>
