@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="totalizer.js"></script>
+</head>
+
 <body>
-<h1>Spreadsheet Totalizer</h1>
-<p>Upload one or multiple spreadsheets to totalize.</p>
+  <h1>Spreadsheet Totalizer</h1>
+  <p>Upload one or multiple spreadsheets to totalize.</p>
   <form enctype="uploadForm">
     <input type="file" name="fileUpload" id="fileUpload" multiple accept="">
-    <input type="submit" onclick="handleFileUpload(event)"></button>
+    <input type="submit" value="Upload" onclick="handleFileUpload(event)"></button>
   </form>
-<script src="totalizer.js"></script>
 
+  <div id="settings">
+    
+  </div>
+
+  <h2>Content Preview</h2>
+  <div id="contentPreview"></div>
 </body> 
 </html>
