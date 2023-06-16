@@ -7,17 +7,37 @@
 
 <body>
   <h1>Spreadsheet Totalizer</h1>
+  <p>This program allows users to obtain a total breakdown for one or multiple
+    spreadsheets. It can be used for calculating integer or decimal totals by 
+    detecting a unique key (ex. name) and number values (ex. hours worked, 
+    customers served, etc.). Real life use cases are any type of scheduling or 
+    work-hour reporting spreadsheet where payroll specialists need to process
+    payroll data or calculate earnings of employees. 
+  </p>
+  <h2> Totalizer Settings</h2>
+  <div id="settings">
+    <label>
+      <input type="checkbox" name="smartMode"> Smart Mode
+    </label>
+    <label>
+      <input type="checkbox" name="toggleCaps"> Capital Sensitive
+    </label>
+    <label>
+      <input type="text" name="target"> 
+    </label>
+  </div>
+
   <p>Upload one or multiple spreadsheets to totalize.</p>
   <form enctype="uploadForm">
     <input type="file" name="fileUpload" id="fileUpload" multiple accept="">
-    <input type="submit" value="Upload" onclick="handleFileUpload(event)"></button>
+    <input type="submit" value="Totalize!" onclick="handleFileUpload(event)"></button>
   </form>
-
-  <div id="settings">
-    
-  </div>
 
   <h2>Content Preview</h2>
   <div id="contentPreview"></div>
+  <h2>Results</h2>
+  <p>Here are the calculated totals. Format allows for directly copying and pasting
+    into Google Sheets or Excel.</p>
+  <div id="result"></div>
 </body> 
 </html>
